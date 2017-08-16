@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Kai's Game Room</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styleSheet.css" rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!----------------- Header ------------------->
+	<div class="header1Container">
+		<div class="header1">
+				<a href="http://www.facebook.com"> <img src="facebook.png" alt="facebook"></a>
+				<a href="http://www.twitter.com"> <img src="twitter.png" alt="twitter"></a>
+				<a href="http://www.tumblr.com"> <img src="tumblr.png" alt="tumblr"></a>
+				<a href="http://www.youtube.com"> <img src="youtube.png" alt="youtube"></a>
+				<a href="http://www.instagram.com"> <img src="instagram.png" alt="instagram"></a>
+			<span class="header1_right">
+				<img src="mail.png" alt="mail">
+				<a href="mailto:customerservice@kaisgameroom.com">customerservice@kaisgameroom.com</a>
+				<a href="tel:718-123-4567" style="margin-left:3em">1-800-123-4567</a>
+			</span>
+		</div>
+	</div>
+	<div class="header2Container">
+		<div class="title">
+<!----------------- Title ------------------->
+			<a href="#" id="title">
+				<FONT COLOR="#FF0000">K</FONT> <FONT COLOR="#FF6000">a</FONT> <FONT COLOR="#FFC000">i</FONT>
+				<FONT COLOR="#cc9900">'</FONT> <FONT COLOR="#9Fff00">s</FONT> <FONT COLOR="#3Fff00"> </FONT>
+				<FONT COLOR="#00ff00">G</FONT> <FONT COLOR="#00ff60">a</FONT> <FONT COLOR="#00ffC0">m</FONT>
+				<FONT COLOR="#00ffff">e</FONT> <FONT COLOR="#00C0ff"> </FONT> <FONT COLOR="#0060ff">R</FONT>
+				<FONT COLOR="#0000ff">o</FONT> <FONT COLOR="#3F00ff">o</FONT> <FONT COLOR="#9F00ff">m</FONT>
+			</a>
+<!----------------- Navigation bar ------------------->
+			<span class="nav-bar">
+				<ul>
+					<li><a class="color1" href="#" id="home">Home</a></li>
+					<li><a class="color2" href="#" id="game">Games</a></li>
+					<li><a class="color3" href="#" id="reviews">Reviews</a></li>
+					<li><a class="color4" href="#" id="news">News</a></li>
+					<li><a class="color5" href="#" id="about">About</a></li>
+					<li><a class="color6" href="#" id="contact">Contact</a></li>
+				</ul>
+			</span>
+		</div>
+	</div>
+	<span id="sc"><img src="sc.png"></span>
+<!----------------- Banner ------------------->
+<div id="indexPage" >
+	<div class="bannerContainer">
+		<div class="banner">
+			<a href="#ps4games"><img class="gamesSlides" src="ff15Banner.jpg"></a>
+			<a href="#xboxgames"><img class="gamesSlides" src="dr4Banner.jpg"></a>
+			<a href="#3dsgames"><img class="gamesSlides" src="pk.jpg"></a>
+			<a href="#xboxgames"><img class="gamesSlides" src="bf1Banner.jpg"></a>
+		</div>
+		<script type="text/javascript">
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("gamesSlides");
+                for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) { slideIndex = 1 }
+					x[slideIndex - 1].style.display = "block";
+					setTimeout(carousel, 3000);
+                }
+        </script>
+	</div>
+<!----------------- Game Content ------------------->
+	<div class="gameContent">
+<!----------------- 3DS GAMES ----------------->
+		<div class="platformTitle" id="3dsgames">
+				<FONT COLOR="#FF0000">3</FONT> <FONT COLOR="#FF6000">D</FONT> <FONT COLOR="#FFC000">S</FONT>
+				&nbsp; <FONT COLOR="#9Fff00">G</FONT> <FONT COLOR="#3Fff00">a</FONT>
+				<FONT COLOR="#00ff00">m</FONT> <FONT COLOR="#00ff60">e</FONT> <FONT COLOR="#00ffC0">s</FONT>
+		</div>
+		<table>
+			<tr>
+				<td>
+					<p>Pokémon Sun</p>
+					<img src="pkSun.jpg" width="300" height="300">
+					<p id="price">$37.99&nbsp;&nbsp;<strike style="color:red;">$39.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Pokemon Sun For 3DS" game-price="37.99">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>Pokémon Moon</p>
+					<img src="pkMoon.jpg" width="300" height="300">
+					<p id="price">$37.99&nbsp;&nbsp;<strike style="color:red;">$39.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Pokemon Moon For 3DS" game-price="37.99">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>Super Mario Maker For 3DS</p>
+					<img src="smMaker.jpg" width="300" height="300">
+					<p id="price">$36.99&nbsp;&nbsp;<strike style="color:red;">$39.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Super Mario Maker For 3DS" game-price="36.99">Add To Cart</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+<!----------------- PS4 GAMES ----------------->
+		<div class="platformTitle" id="ps4games">
+			<FONT COLOR="#FF0000">P</FONT> <FONT COLOR="#FF6000">S</FONT> <FONT COLOR="#FFC000">4</FONT>
+			&nbsp; <FONT COLOR="#9Fff00">G</FONT> <FONT COLOR="#3Fff00">a</FONT>
+			<FONT COLOR="#00ff00">m</FONT> <FONT COLOR="#00ff60">e</FONT> <FONT COLOR="#00ffC0">s</FONT>
+		</div>
+		<table>
+			<tr>
+				<td>
+					<p>Final Fantasy XV</p>
+					<img src="ff15.jpg" width="280" height="400">
+					<p id="price">$57.99&nbsp;&nbsp;<strike style="color:red;">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Final Fantasy XV For PlayStation 4" game-price="59.99">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>Watch Dog 2</p>
+					<img src="wd2.jpg" width="280" height="400">
+					<p id="price">$56.96&nbsp;&nbsp;<strike style="color:red;">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Watch Dog 2 For PlayStation 4" game-price="56.96">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>The Last Guardian</p>
+					<img src="lg.jpg" width="280" height="400">
+					<p id="price">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="The Last Guardian For PlayStation 4" game-price="59.99">Add To Cart</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+<!----------------- XBOX GAMES ----------------->
+		<div class="platformTitle" id="xboxgames">
+			<FONT COLOR="#FF0000">X</FONT> <FONT COLOR="#FF6000">B</FONT> <FONT COLOR="#FFC000">o</FONT>
+			<FONT COLOR="#cc9900">x</FONT>&nbsp; <FONT COLOR="#9Fff00">G</FONT> <FONT COLOR="#3Fff00">a</FONT>
+			<FONT COLOR="#00ff00">m</FONT> <FONT COLOR="#00ff60">e</FONT> <FONT COLOR="#00ffC0">s</FONT>
+		</div>
+		<table>
+			<tr>
+				<td>
+					<p>Dead Rising 4</p>
+					<img src="dr4.png" width="280" height="400">
+					<p id="price">$58.99&nbsp;&nbsp;<strike style="color:red;">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Dead Rising 4 For Xbox One" game-price="59.99">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>Battlefield 1</p>
+					<img src="bf1.jpg" width="280" height="400">
+					<p id="price">$52.88&nbsp;&nbsp;<strike style="color:red;">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="Battlefield 1 For Xbox One" game-price="52.88">Add To Cart</button>
+					</div>
+				</td>
+				
+				<td>
+					<p>NBA 2K17</p>
+					<img src="nb2k17.png" width="330" height="400">
+					<p id="price">$39.99&nbsp;&nbsp;<strike style="color:red;">$59.99</strike></p>
+					<div class="addToCartButton">
+						<button class="add-to-cart" game-name="NBA 2K17 For Xbox One" game-price="39.99">Add To Cart</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!----------------- Shopping Cart ------------------->
+<div class="shoppingCartPage">
+	<div class="advtisBanner">
+	</div>
+	<div class="shoppingCartContainer">
+		<img src="cs.png" id="continue" style="margin-left:800px">
+		<table id="shoppingCart">
+			<thead>
+				<tr>
+					<th>Items</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Subtotal</th>
+					<th> </th>
+				</tr>
+			</thead>
+		</table>
+		<p id="totalPrice" style="color:red">Total: </p>
+		
+		<div class="table">
+			<form action="javascript:checkOut()" method="POST">
+				<div class="tr">
+					<div class="td">
+						<p>Full Name(as it appears on your card): <p>
+						<p><input type="text" id="ccname" required/></p>
+						<p>Card Number(no dashes or spaces): </p>
+						<p><input type="text" id="ccnumber" maxlength="16" required/></p>
+						Expiration Date: 
+						<select id='expireMM' required>
+							<option value=''>Month</option> <option value='01'>January</option>
+							<option value='02'>February</option> <option value='03'>March</option>
+							<option value='04'>April</option> <option value='05'>May</option>
+							<option value='06'>June</option> <option value='07'>July</option>
+							<option value='08'>August</option> <option value='09'>September</option>
+							<option value='10'>October</option> <option value='11'>November</option> <option value='12'>December</option>
+						</select> 
+							<select name='expireYYYY' id='expireYYYY'>
+								<option value=''>Year</option> <option value='2017'>2017</option>
+								<option value='2018'>2018</option> <option value='2019'>2019</option>
+								<option value='2020'>2020</option> <option value='2021'>2021</option>
+								<option value='2022'>2022</option> <option value='2023'>2023</option>
+								<option value='2024'>2024</option> <option value='2025'>2025</option>
+						</select> 
+						<p>CVV code: <input type="text" maxlength="3" id="securityCode" required/><p>
+					</div>
+					
+					<div class="td">
+						<p>Billing Address:</p>
+						<p>Address Line 1: <input type="text" id="a1" required/></p>
+						<p>Address Line 2: <input type="text" id="a2" required/></p>
+						<p>City: <input type="text" id="city" required/></p>
+						<p>Zip Code: <input type="text" id="zipCode" maxlength="5" required/></p>
+						<p>States:
+						<select id="states" required>
+							<option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+							<option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option>
+							<option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option>
+							<option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option>
+							<option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option>
+							<option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option>
+							<option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+						</select></p>
+						<p><input type="checkbox" id="sameAsShippingAddress"> Same as shipping address<br></p>				
+					</div>
+					
+					<div class="td">
+						<p>Shipping Address:</p>
+						<p>Address Line 1: <input type="text" id="a1SA" required/></p>
+						<p>Address Line 2: <input type="text" id="a2SA" required/></p>
+						<p>City: <input type="text" id="citySA" required/></p>
+						<p>Zip Code: <input type="text" id="zipCodeSA" maxlength="5" required/></p>
+						<p>States:
+						<select id="statesSA" required>
+							<option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+							<option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option>
+							<option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option>
+							<option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option>
+							<option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option>
+							<option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option>
+							<option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+						</select></p>					
+					</div>
+				</div>
+				<p>
+					<input type="image" name="submit" src="po.png" width="250" height="70">
+				</p>
+			</form>
+		</div>
+	</div>
+</div>
+	<div class="footer">
+		<p>Copyright &copy; Kai Liu 2016</p>
+	<div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+html, body {
+	width:100%;
+	height:100%; 
+	margin:0;
+	padding:0;
+}
+
+/*
+*	Top Header
+*/
+
+.header1Container {
+	width: 100%;
+	background:url("header.gif");
+	min-width: 1000px;
+}
+
+.header1 {
+	margin-left:10%;
+	padding: 0.5em 0.625em;
+
+}
+
+.header1 a img{
+	margin-left:1em;
+	width:30px;
+	height:30px;
+}
+
+.header1_right{
+	float:right;
+	margin-right:15%;
+}
+
+.header1_right img{
+	max-width:15px;
+	max-height:15px;
+	margin-top:0.5em;
+}
+
+.header1_right a{
+	text-decoration: none;
+	color:#ffffcc;
+	font-weight: bold;
+}
+
+/*
+*	Title
+*/
+.header2Container {
+	width: 100%;
+	min-width: 1500px;
+}
+
+.title {
+	margin-left:10%;
+	padding:20px 0;
+}
+
+.title a {
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+	font-size:2.8em;
+	color:black;
+	text-shadow: 2px 2px 8px #FF0000;
+}
+
+
+/*
+*	Navigation bar
+*/
+
+.nav-bar{
+	float:right;
+	margin-right:10%
+}
+
+.nav-bar ul li {
+	display:inline-block;
+	float: left;
+	padding-right:1em;
+}
+
+.nav-bar ul li  a {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;		
+	font-size: 1.1em;
+	padding: 0.5em;
+	font-family: 'Bree Serif', serif;
+}
+
+.nav-bar ul li a:hover{color:#fff;}
+.nav-bar ul li a.color1:hover{background:#ff5050;}
+.nav-bar ul li a.color2:hover{background:#fd9f3e;}
+.nav-bar ul li a.color3:hover{background:#553a99;}
+.nav-bar ul li a.color4:hover{background:#6cbc35;}
+.nav-bar ul li a.color5:hover{background:#08538c;}
+.nav-bar ul li a.color6:hover{background:#FFE500;}
+
+/*
+*	Banner
+*/
+.bannerContainer {
+	width: 100%;
+	height:500px;
+	padding:20px 0;
+	background:url("banner.png");
+}
+
+.banner{
+	min-width:1000px;
+	width:50%;
+	margin-left:25%;
+	height:100%;
+}
+
+.banner a img{
+	width:100%;
+	height:100%;
+}
+
+/*
+*	Game Content
+*/
+.gameContent{text-align: center;}
+
+.platformTitle{
+	font-family: 'Lobster', cursive;
+	padding-top:30px;
+	font-size:35px;
+}
+
+.gameContent table{margin:auto}
+
+.gameContent table p{
+	font-family: 'Lobster', cursive;
+	font-size:25px;
+}
+
+#price{font-size:20px;}
+
+.gameContent table td {padding: 0 50px;}
+
+.addToCartButton {padding-top:10px;}
+
+.addToCartButton button{
+	font-family: 'Lobster', cursive;
+	background:red;
+	color:white;
+	width:200px;
+	height:30px;
+}
+
+/*
+*	Shopping Cart
+*/
+.shoppingCartContainer {
+	font-family: 'Lobster', cursive;
+	text-align:center;
+	width: 100%;
+}
+
+.shoppingCartContainer p input{
+	text-align:center;
+}
+
+.shoppingCartContainer table{
+	text-align:center;
+	width:50%;
+	margin:auto;
+}
+
+.shoppingCartContainer table select{
+	font-family: 'Lobster', cursive;
+}
+
+.shoppingCartContainer table th,.shoppingCartContainer table td{border:1px solid #CADEFF;}
+
+.quantity-input{
+	text-align:center;
+	width:50px
+}
+
+#totalPrice{
+	text-align:center;
+	font-size:30px;
+}
+
+.advtisBanner{
+	width: 100%;
+	height:200px;
+	background:url("banner.png");
+}
+
+#sc{
+	position: fixed;
+    right: 100px;
+}
+
+#sc img{
+	width:100px;
+	height:100px;
+}
+
+/*
+*	Check Out
+*/
+.table 
+{
+    display:table;
+	margin:auto;
+	width:50%;
+	
+}
+.tr
+{
+    display:table-row;
+}
+.td
+{
+    display:table-cell;
+	padding-left:50px;
+	
+}
+
+/*
+*	Footer
+*/
+.footer{
+	text-align:center;
+	width:100%;
+	background:url("banner.png");
+	height:70px;
+}
+
+.footer p{
+	font-family: 'Lobster', cursive;
+	padding-top:20px;
+	color:blue;
+	font-size:20px
+}
+
